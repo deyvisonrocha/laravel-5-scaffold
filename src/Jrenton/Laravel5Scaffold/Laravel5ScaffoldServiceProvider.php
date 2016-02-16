@@ -1,8 +1,8 @@
-<?php namespace Jrenton\LaravelScaffold;
+<?php namespace Jrenton\Laravel5Scaffold;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelScaffoldServiceProvider extends ServiceProvider {
+class Laravel5ScaffoldServiceProvider extends ServiceProvider {
 
     /**
      * Indicates if loading of the provider is deferred.

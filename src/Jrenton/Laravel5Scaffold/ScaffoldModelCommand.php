@@ -1,28 +1,26 @@
-<?php namespace Jrenton\LaravelScaffold;
+<?php namespace Jrenton\Laravel5Scaffold;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 
-class ScaffoldUpdateCommand extends Command
+class ScaffoldModelCommand extends Command
 {
-    protected $name = 'scaffold:update';
+    protected $signature = 'scaffold:model';
 
-    protected $description = "Update model and database schema based on changes to models file";
+    protected $description = "Makes table, controller, model, views, seeds, and repository for model";
 
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function fire()
+    public function handle()
     {
-        $this->info('Updating...');
-
         $scaffold = new Scaffold($this);
 
-        $scaffold->update();
+        $scaffold->createModels();
 
-        $this->info('Finishing...');
+        $this->info('Please wait a few moments...');
 
         $this->call('clear-compiled');
 

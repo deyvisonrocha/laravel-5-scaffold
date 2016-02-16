@@ -1,5 +1,5 @@
 {
-    "name": "jrenton/laravel-scaffold",
+    "name": "jrenton/laravel-5-scaffold",
     "description": "Fastest way to rapidly scaffold a laravel application",
     "keywords": ["laravel", "package", "scaffold", "command"],
     "license": "MIT",
@@ -9,17 +9,17 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=5.5.9",
         "fzaninotto/faker": "v1.3.0"
     },
     "require-dev": {
-        "illuminate/support": "~4",
-        "illuminate/console": "~4",
-        "illuminate/filesystem": "~4"
+        "illuminate/support": "~5",
+        "illuminate/console": "~5",
+        "illuminate/filesystem": "~5"
     },
     "autoload": {
         "psr-0": {
-            "Jrenton\\LaravelScaffold": "src/"
+            "Jrenton\\Laravel5Scaffold": "src/"
         }
     },
     "minimum-stability": "dev"

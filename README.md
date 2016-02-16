@@ -14,9 +14,9 @@ Next, update Composer from the Terminal:
 
     composer update
 
-Once this operation completes, the final step is to add the service provider. Open `app/config/app.php`, and add a new item to the providers array.
+Once this operation completes, the final step is to add the service provider. Open `app/Console/Kernel.php`, and add a new item to the commands array.
 
-    'Jrenton\LaravelScaffold\LaravelScaffoldServiceProvider'
+    'Jrenton\Laravel5Scaffold\Laravel5ScaffoldServiceProvider'
 
 That's it! You're all set to go. Run the `artisan` command from the Terminal to see the new `scaffold` command.
 

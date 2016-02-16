@@ -1,11 +1,11 @@
-<?php namespace Jrenton\LaravelScaffold;
+<?php namespace Jrenton\Laravel5Scaffold;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 
 class ScaffoldCommand extends Command
 {
-    protected $name = 'scaffold';
+    protected $signature = 'scaffold';
 
     protected $description = "Makes layout, js/css, table, controller, model, views, seeds, and repository";
 
@@ -14,7 +14,7 @@ class ScaffoldCommand extends Command
         parent::__construct();
     }
 
-    public function fire()
+    public function handle()
     {
         $scaffold = new Scaffold($this);
 

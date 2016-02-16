@@ -1,4 +1,4 @@
-<?php namespace Jrenton\LaravelScaffold;
+<?php namespace Jrenton\Laravel5Scaffold;
 
 class Migration
 {

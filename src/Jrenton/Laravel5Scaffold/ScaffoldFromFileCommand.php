@@ -1,4 +1,4 @@
-<?php namespace Jrenton\LaravelScaffold;
+<?php namespace Jrenton\Laravel5Scaffold;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
@@ -6,7 +6,7 @@ use Symfony\Component\Console\Input\InputArgument;
 
 class ScaffoldFromFileCommand extends Command
 {
-    protected $name = 'scaffold:file';
+    protected $signature = 'scaffold:file';
 
     protected $description = "Makes table, controller, model, views, seeds, and repository from file";
 
@@ -18,7 +18,7 @@ class ScaffoldFromFileCommand extends Command
         $this->app = $app;
     }
 
-    public function fire()
+    public function handle()
     {
         $scaffold = new Scaffold($this);
 
