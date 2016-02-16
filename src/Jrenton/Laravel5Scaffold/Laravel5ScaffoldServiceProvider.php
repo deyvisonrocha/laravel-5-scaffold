@@ -18,7 +18,9 @@ class Laravel5ScaffoldServiceProvider extends ServiceProvider {
      */
     public function boot()
     {
-        $this->package('jrenton/laravel-scaffold');
+        $$this->publishes([
+            __DIR__.'/../../config/config.php' => config_path('laravel5scaffold.php')
+        ], 'config');
     }
 
     /**

@@ -76,17 +76,17 @@ return array(
 
     'paths' => array(
 
-        'templates' => 'app/templates',
-        'controllers' => 'app/controllers',
-        'migrations' => 'app/database/migrations',
-        'seeds' => 'app/database/seeds',
-        'models' => 'app/models',
-        'repositories' => 'app/repositories',
-        'repositoryInterfaces' => 'app/repositories/interfaces',
-        'tests' => 'app/tests',
-        'views' => 'app/views',
-        'routes' => 'app',
-        'layout' => 'app/views/layouts/default.blade.php'
+        'templates' => 'templates',
+        'controllers' => 'app/Http/Controllers',
+        'migrations' => 'database/migrations',
+        'seeds' => 'database/seeds',
+        'models' => 'app/Http/Models',
+        'repositories' => 'app/Http/Repositories',
+        'repositoryInterfaces' => 'app/Http/Repositories/Interfaces',
+        'tests' => 'tests',
+        'views' => 'resources/views',
+        'routes' => 'app/Http',
+        'layout' => 'resources/views/layouts/default.blade.php'
 
     ),
 
