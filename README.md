@@ -1,13 +1,13 @@
-## Laravel 4 Scaffold Command
+## Laravel 5 Scaffold Command
 
 Automatically generates the files you need to get up and running. Generates a default layout, sets up bootstrap or foundation, prompts for javascript files (options are ember, angular, backbone, underscore, and jquery), creates model, controller, and views, runs migration, updates routes, and seeds your new table with mock data - all in one command.
 
 ## Installation
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `jrenton/laravel-scaffold`
+Begin by installing this package through Composer. Edit your project's `composer.json` file to require `jrenton/laravel-5-scaffold`
 
     "require-dev": {
-		"jrenton/laravel-scaffold": "dev-master"
+		"jrenton/laravel-5-scaffold": "dev-master"
 	}
 
 Next, update Composer from the Terminal:
@@ -110,12 +110,6 @@ Have a lot of properties that are "strings" or "integers" etc? No problem, just 
 
 If you are using the above syntax, please strictly adhere to it (for now).
 
-## Video overview of command
-
-Reading is boring... check out this overview: https://www.youtube.com/watch?v=6ESSjdUSNMw
-
-This video is a bit out of date now (more awesomeness has been added), but the idea is still the same.
-
 ## Additional comments
 
 The seeder uses faker in order to randomly generate 10 rows in each table. It will try to determine the type, but you can open the seed file to verify. For more information on Faker: https://github.com/fzaninotto/Faker
@@ -139,17 +133,3 @@ Then, you can edit your bash file to include a new alias:
 Then run `laravel project-name` and watch as your application is fully built and scaffolded for you :)
 
 Watch a [demonstration](http://youtu.be/e7otZWQSqrY) on youtube
-
-## Features to be added for 1.0 release
-
-- -nv option for no views
-- -m option for migration only ( pivot tables )
-- add field length option ( name:string|40 )
-- on delete restrict/cascade/null
-- remove model/controller/repository/views/seeds/tests if model is removed
-- update model/controller/repository/views/seeds/tests if property is removed
-
-## Future ideas
-
-- Add command `scaffold:rollback` to remove any files that were created during the last scaffold update.
-- Automatically create js file based on js framework that is specified.
