@@ -98,11 +98,11 @@ class AssetDownloader
                 $this->fileCreator->createDirectory($dir);
             }
 
-            $content = \File::get($this->configSettings['pathTo']['controllers'].'BaseController.php');
+            $content = \File::get($this->configSettings['pathTo']['controllers'].'Controller.php');
             if(strpos($content, "\$layout") === false)
             {
                 $content = preg_replace("/Controller {/", "Controller {\n\tprotected \$layout = '$layoutName';", $content);
-                \File::put($this->configSettings['pathTo']['controllers'].'BaseController.php', $content);
+                \File::put($this->configSettings['pathTo']['controllers'].'Controller.php', $content);
             }
 
             $overwrite = false;

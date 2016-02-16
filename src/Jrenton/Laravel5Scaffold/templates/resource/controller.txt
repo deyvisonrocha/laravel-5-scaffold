@@ -1,6 +1,6 @@
 <?php [namespace]
 
-class [controller] extends \BaseController
+class [controller] extends Controller
 {
 	protected $[model];
 
